@@ -12,7 +12,7 @@ public class Main {
 		System.out.println("Hello happy sales people");
 		System.out.println("This app shows sale data");
 		System.out.println("-------------------------");
-		// this is checking 3
+		// this is checking 4
 		System.out.println("Test 1");
 		System.out.println("Test 2");
 	}
