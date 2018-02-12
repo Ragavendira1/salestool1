@@ -22,7 +22,7 @@ public class Main {
 		// added new line into main code
 		System.out.println("Test 5");
 		// added new line into main code
-		System.out.println("Test 7");
+		System.out.println("Test 7.1");
 												
 	}
 }
