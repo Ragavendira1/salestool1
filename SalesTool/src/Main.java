@@ -21,6 +21,8 @@ public class Main {
 		System.out.println("Test 4");
 		// added new line into main code
 		System.out.println("Test 5");
-						
+		// added new line into main code
+		System.out.println("Test 7");
+												
 	}
 }
