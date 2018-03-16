@@ -10,6 +10,7 @@ public class Main {
 	private static void displayGreeting() {
 		// this is checking 
 		System.out.println("Hello happy sales people");
+		System.out.println("Hello1 happy sales people");
 		System.out.println("This app shows sale data");
 		System.out.println("-------------------------");
 		// this is checking 4
