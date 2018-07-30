@@ -17,3 +17,8 @@ fi
 #Cron this job to run daily at 22.00 PM EST
 # * 22 * * *
 
+mysqlbckup_file=$(ls -t  all-databases.* | head -n 1)
+
+curl -v -uTQSuser:tqs!re@o \
+   --upload-file all-databases.07292018_220001.sql \
+   http://10.32.6.113:8081/nexus/content/repositories/TQS/1.0.0/all-databases.07292018_220001.sql
