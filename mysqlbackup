@@ -1,0 +1,19 @@
+#!/bin/bash
+# Take daily back ups of my SQL docker images - with structure and data
+D="$(date)"
+echo "MySQL database back up begins at: $D"
+
+
+#take back up of mysql daily once
+docker exec  $(docker ps -f name=tmysql -q) sh -c 'exec mysqldump --all-databases -uroot -pTestdata@2k18' > /home/svcdocker/msqlbackup/all-databases.$(date +"%m%d%Y_%H%M%S").sql
+
+if [ "$?" -eq 0 ]
+then
+    echo "`date` : Mysql database backup completed successfully" >> /home/svcdocker/msqlbackup/log
+else
+    echo "`date` : Mysql Database backup  failed" >> /home/svcdocker/msqlbackup/log
+fi
+
+#Cron this job to run daily at 22.00 PM EST
+# * 22 * * *
+
